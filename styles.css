@@ -1,0 +1,192 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0d1b2a;
+  color: #ffffff;
+}
+
+header {
+  background-color: #1b263b;
+  color: #f0c808;
+  text-align: center;
+  padding: 60px 20px 40px;
+}
+
+header h1 {
+  font-size: 2.8em;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2em;
+}
+
+.testimonials-section {
+  padding: 50px 20px 40px;
+  background-color: #1b263b;
+  text-align: center;
+}
+
+.testimonials-section h2 {
+  color: #f0c808;
+  margin-bottom: 30px;
+}
+
+.tab-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  gap: 20px;
+}
+
+.tab-button {
+  padding: 10px 25px;
+  background-color: #f0c808;
+  color: #0d1b2a;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.tab-button:hover,
+.tab-button.active {
+  background-color: #e0b800;
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  padding: 10px;
+}
+
+.sticky-note {
+  padding: 20px;
+  width: 100%;
+  max-width: 250px;
+  min-height: 160px;
+  font-size: 0.95em;
+  font-style: italic;
+  border-radius: 5px;
+  box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.3);
+  position: relative;
+  transform: rotate(-1.5deg);
+}
+
+.sticky-yellow { background: #fff89a; color: #1b263b; }
+.sticky-blue { background: #c1ecff; color: #1b263b; }
+.sticky-green { background: #d4fcb5; color: #1b263b; }
+.sticky-pink { background: #ffc7d1; color: #1b263b; }
+
+.sticky-note strong {
+  display: block;
+  margin-top: 10px;
+  font-style: normal;
+  color: #0d1b2a;
+}
+
+.poem-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 10px 20px;
+  text-align: left;
+}
+
+.poem-card {
+  background-color: #fff89a;
+  color: #0d1b2a;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 3px 5px 10px rgba(0,0,0,0.3);
+  font-style: italic;
+}
+
+.poem-card strong {
+  display: block;
+  margin-top: 15px;
+  font-style: normal;
+  color: #1b263b;
+}
+
+.submit-button-container {
+  text-align: center;
+  margin: 30px 0 50px;
+}
+
+.submit-button {
+  background-color: #f0c808;
+  color: #0d1b2a;
+  font-size: 1.1em;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #e0b800;
+}
+
+.form-section {
+  padding: 30px 20px 80px;
+  text-align: center;
+  display: none;
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
+}
+
+.form-section.show {
+  display: block;
+  opacity: 1;
+}
+
+.form-section form {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  color: #1b263b;
+}
+
+.form-section label {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  font-weight: bold;
+}
+
+.form-section input,
+.form-section select,
+.form-section textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 1em;
+}
+
+.form-section button[type="submit"] {
+  background-color: #f0c808;
+  color: #0d1b2a;
+  font-size: 1em;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.form-section button[type="submit"]:hover {
+  background-color: #e0b800;
+}
+
