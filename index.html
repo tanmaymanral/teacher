@@ -1,0 +1,43 @@
+<!-- Form Section -->
+<div class="form-section" id="formSection">
+<h2 style="margin-bottom:20px; color: #f0c808;">Submit Your Message or Poem</h2>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScfbaxGByNfXvGmngt0cKbL4avlQzXI5uWe9QYhsbMOYiOBeA/viewform?embedded=true">Loading…</iframe>
+  </div>
+
+  <form 
+	action="https://formspree.io/f/myzjrapa"
+  	method="POST"
+>
+ <form action="#" method="post">
+<label>
+Name:
+<input type="text" name="name" required />
+@@ -212,7 +206,17 @@ <h2 style="margin-bottom:20px; color: #f0c808;">Submit Your Message or Poem</h2>
+
+<label>
+Batch:
+    <input type="text" name="batch" required />
+    <select name="batch" required>
+      <option value="">Select Batch</option>
+      <!-- Years from 1998 to 2025 -->
+      <!-- You can generate this dynamically using JS if needed -->
+      <!-- For now, statically listing them -->
+      <script>
+        for (let year = 1998; year <= 2025; year++) {
+          document.write(<option value="${year}">${year}</option>);
+        }
+      </script>
+    </select>
+</label>
+<br /><br />
+
+@@ -222,6 +226,10 @@ <h2 style="margin-bottom:20px; color: #f0c808;">Submit Your Message or Poem</h2>
+</label>
+<br /><br />
+
+  <button type="submit">Send</button>
+</form>
+
+
+<button type="submit">Send</button>
+</form>
