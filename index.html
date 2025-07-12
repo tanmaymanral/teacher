@@ -4,162 +4,7 @@
   <meta charset="UTF-8" />
   <title>Teachers' Day 2025 | Graphic Era Alumni Association</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #0d1b2a;
-      color: #ffffff;
-    }
-
-    header {
-      background-color: #1b263b;
-      color: #f0c808;
-      text-align: center;
-      padding: 60px 20px 40px;
-    }
-
-    header h1 {
-      font-size: 2.8em;
-      margin-bottom: 10px;
-    }
-
-    header p {
-      font-size: 1.2em;
-    }
-
-    .testimonials-section {
-      padding: 50px 20px 40px;
-      background-color: #1b263b;
-      text-align: center;
-    }
-
-    .testimonials-section h2 {
-      color: #f0c808;
-      margin-bottom: 30px;
-    }
-
-    .tab-buttons {
-      display: flex;
-      justify-content: center;
-      margin-bottom: 30px;
-      gap: 20px;
-    }
-
-    .tab-button {
-      padding: 10px 25px;
-      background-color: #f0c808;
-      color: #0d1b2a;
-      border: none;
-      border-radius: 20px;
-      cursor: pointer;
-      font-weight: bold;
-      transition: background 0.3s;
-    }
-
-    .tab-button:hover,
-    .tab-button.active {
-      background-color: #e0b800;
-    }
-
-    .testimonial-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-      justify-items: center;
-      padding: 10px;
-    }
-
-    .sticky-note {
-      padding: 20px;
-      width: 100%;
-      max-width: 250px;
-      min-height: 160px;
-      font-size: 0.95em;
-      font-style: italic;
-      border-radius: 5px;
-      box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.3);
-      position: relative;
-      transform: rotate(-1.5deg);
-    }
-
-    .sticky-yellow { background: #fff89a; color: #1b263b; }
-    .sticky-blue { background: #c1ecff; color: #1b263b; }
-    .sticky-green { background: #d4fcb5; color: #1b263b; }
-    .sticky-pink { background: #ffc7d1; color: #1b263b; }
-
-    .sticky-note strong {
-      display: block;
-      margin-top: 10px;
-      font-style: normal;
-      color: #0d1b2a;
-    }
-
-    .poem-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      padding: 10px 20px;
-      text-align: left;
-    }
-
-    .poem-card {
-      background-color: #fff89a;
-      color: #0d1b2a;
-      padding: 20px;
-      border-radius: 5px;
-      box-shadow: 3px 5px 10px rgba(0,0,0,0.3);
-      font-style: italic;
-    }
-
-    .poem-card strong {
-      display: block;
-      margin-top: 15px;
-      font-style: normal;
-      color: #1b263b;
-    }
-
-    .submit-button-container {
-      text-align: center;
-      margin: 30px 0 50px;
-    }
-
-    .submit-button {
-      background-color: #f0c808;
-      color: #0d1b2a;
-      font-size: 1.1em;
-      padding: 12px 30px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: background 0.3s;
-    }
-
-    .submit-button:hover {
-      background-color: #e0b800;
-    }
-
-    .form-section {
-      padding: 30px 20px 80px;
-      text-align: center;
-      display: none;
-      opacity: 0;
-      transition: opacity 0.6s ease-in-out;
-    }
-
-    .form-section.show {
-      display: block;
-      opacity: 1;
-    }
-
-    .form-section iframe {
-      width: 100%;
-      max-width: 800px;
-      height: 700px;
-      border: none;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
@@ -168,39 +13,62 @@
     <p>Graphic Era Alumni Association</p>
   </header>
 
-  <!-- Testimonials and Poems Section -->
   <section class="testimonials-section" id="testimonialSection">
     <h2>Alumni Contributions</h2>
-    
-    <!-- Tabs -->
     <div class="tab-buttons">
       <button class="tab-button active" onclick="showTab('messages')">Messages</button>
       <button class="tab-button" onclick="showTab('poems')">Poems</button>
     </div>
 
-    <!-- Messages -->
-    <div class="testimonial-grid" id="messagesTab">
-      <!-- JS will inject messages -->
-    </div>
-
-    <!-- Poems -->
-    <div class="poem-grid" id="poemsTab" style="display: none;">
-      <!-- JS will inject poems -->
-    </div>
+    <div class="testimonial-grid" id="messagesTab"></div>
+    <div class="poem-grid" id="poemsTab" style="display: none;"></div>
   </section>
 
-  <!-- Submit Button -->
   <div class="submit-button-container">
-    <button class="submit-button" onclick="showForm()">Submit Your Message or Poem</button>
+    <button class="submit-button" onclick="toggleForm()">Submit Your Message or Poem</button>
   </div>
 
-  <!-- Form Section -->
   <div class="form-section" id="formSection">
-    <h2 style="margin-bottom:20px; color: #f0c808;">Submit Your Message or Poem</h2>
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScfbaxGByNfXvGmngt0cKbL4avlQzXI5uWe9QYhsbMOYiOBeA/viewform?embedded=true">Loading…</iframe>
+    <h2>Submit Your Message or Poem</h2>
+    <form>
+      <label>Name:
+        <input type="text" name="name" required />
+      </label>
+
+      <label>Batch:
+        <select name="batch" required>
+          <option value="">Select Batch</option>
+          <!-- Batches from 1998–2025 -->
+          <script>
+            for (let year = 1998; year <= 2025; year++) {
+              document.write(`<option value="${year}">${year}</option>`);
+            }
+          </script>
+        </select>
+      </label>
+
+      <label>Course:
+        <select name="course" required>
+          <option value="">Select Course</option>
+          <option>B.Tech</option>
+          <option>M.Tech</option>
+          <option>BCA</option>
+          <option>MCA</option>
+          <option>BBA</option>
+          <option>MBA</option>
+          <option>B.Com(H)</option>
+          <option>B.Pharma</option>
+        </select>
+      </label>
+
+      <label>Message or Poem:
+        <textarea name="message" rows="5" required></textarea>
+      </label>
+
+      <button type="submit">Send</button>
+    </form>
   </div>
 
-  <!-- JavaScript -->
   <script>
     const feedbacks = [
       { name: "Ritika Sharma (MBA 2018)", msg: "To all my professors at GEHU — thank you for shaping my future!" },
@@ -237,7 +105,6 @@
     function renderTestimonials() {
       const container = document.getElementById('messagesTab');
       container.innerHTML = '';
-
       for (let i = 0; i < 4; i++) {
         const index = (currentIndex + i) % feedbacks.length;
         const feedback = feedbacks[index];
@@ -246,14 +113,12 @@
         div.innerHTML = `${feedback.msg}<strong>– ${feedback.name}</strong>`;
         container.appendChild(div);
       }
-
       currentIndex = (currentIndex + 4) % feedbacks.length;
     }
 
     function renderPoems() {
       const container = document.getElementById('poemsTab');
       container.innerHTML = '';
-
       poems.forEach(poem => {
         const div = document.createElement('div');
         div.className = 'poem-card';
@@ -265,84 +130,21 @@
     function showTab(tab) {
       document.getElementById('messagesTab').style.display = (tab === 'messages') ? 'grid' : 'none';
       document.getElementById('poemsTab').style.display = (tab === 'poems') ? 'grid' : 'none';
-
       document.querySelectorAll('.tab-button').forEach(btn => {
         btn.classList.remove('active');
         if (btn.textContent.toLowerCase() === tab) btn.classList.add('active');
       });
     }
 
-    function showForm() {
-      const form = document.getElementById('formSection');
-      form.classList.add('show');
-      form.scrollIntoView({ behavior: 'smooth' });
-    }
-
-    // Initial rendering
-    renderTestimonials();
-    renderPoems();
-    setInterval(renderTestimonials, 8000);
-  </script>
-
-</body>
-</html>
-
-
-  <!-- Submit Button -->
-  <div class="submit-button-container">
-    <button class="submit-button" onclick="toggleForm()">Submit Your Message or Poem</button>
-  </div>
-
-  <!-- Hidden Form Section -->
-  <div class="form-section" id="formSection">
-    <h2 style="margin-bottom:20px; color: #f0c808;">Submit Your Message or Poem</h2>
-    <form>
-      <label>
-        Name:
-        <input type="text" name="name" required />
-      </label>
-
-      <label>
-        Batch:
-        <select name="batch" required>
-          <option value="">Select Batch</option>
-          <!-- Static years from 1998–2025 -->
-          <script>
-            for (let year = 1998; year <= 2025; year++) {
-              document.write(`<option value="${year}">${year}</option>`);
-            }
-          </script>
-        </select>
-      </label>
-
-      <label>
-        Course:
-        <select name="course" required>
-          <option value="">Select Course</option>
-          <option>BBA</option>
-          <option>B.Com</option>
-          <option>MCA</option>
-          <option>BCA</option>
-          <option>B.Tech CSE</option>
-        </select>
-      </label>
-
-      <label>
-        Message or Poem:
-        <textarea name="message" rows="5" required></textarea>
-      </label>
-
-      <button type="submit">Send</button>
-    </form>
-  </div>
-
-  <script>
     function toggleForm() {
       const form = document.getElementById('formSection');
       form.classList.add('show');
       form.scrollIntoView({ behavior: 'smooth' });
     }
-  </script>
 
+    renderTestimonials();
+    renderPoems();
+    setInterval(renderTestimonials, 8000);
+  </script>
 </body>
 </html>
