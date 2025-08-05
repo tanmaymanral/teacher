@@ -30,10 +30,7 @@
 
   <div class="form-section" id="formSection">
     <h2>Submit Your Message or Poem</h2>
-    <form
-      action="https://formspree.io/f/myzjrapa"
-  	method="POST"
-      >
+    <form id="contact-form">
       <label>Name:
         <input type="text" name="name" required />
       </label>
@@ -73,6 +70,32 @@
   </div>
 
   <script>
+
+    // Add this script to your HTML file
+const form = document.getElementById('contact-form');
+const scriptURL = 'https://script.google.com/macros/s/AKfycbw6kioS7LNMPXN0Lu18A03X4Ha8TI5BTEtwmlJSrOTQOltKUW7iQizAlXPNbHjxwDov8Q/exec';
+
+form.addEventListener('submit', e => {
+  e.preventDefault(); // This is the crucial line that stops the page from redirecting
+  const submitButton = form.querySelector('button[type="submit"]');
+  submitButton.disabled = true;
+  submitButton.textContent = 'Sending...';
+
+  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    .then(response => {
+      alert('Thank you! Your message has been sent successfully.');
+      form.reset();
+      submitButton.disabled = false;
+      submitButton.textContent = 'Send';
+    })
+    .catch(error => {
+      console.error('Error!', error.message);
+      alert('Oops! There was a problem submitting your form.');
+      submitButton.disabled = false;
+      submitButton.textContent = 'Send';
+    });
+});
+    
     const feedbacks = [
       { name: "Ritika Sharma (MBA 2018)", msg: "To all my professors at GEHU — thank you for shaping my future!" },
       { name: "Abhishek Mehra (B.Tech CSE 2016)", msg: "Each lesson taught by our teachers has been a stepping stone. Grateful beyond words." },
