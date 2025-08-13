@@ -126,16 +126,42 @@ header nav a:hover {
 }
 
 
-.carousel-wrapper {
-  overflow-x: auto;
-  width: 100%;
-}
+
 
 .carousel-track {
   display: flex;
   transition: transform 0.5s ease;
 }
+.card-container,
+.carousel-wrapper {
+  overflow-x: auto;
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: rgba(255,255,255,0.5) transparent;
+  padding-bottom: 12px; /* Space below content */
+}
 
+/* Chrome, Edge, Safari */
+.card-container::-webkit-scrollbar,
+.carousel-wrapper::-webkit-scrollbar {
+  height: 6px; /* Thin bar */
+  margin-top: 4px; /* Push it slightly away from content */
+}
+
+.card-container::-webkit-scrollbar-track,
+.carousel-wrapper::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.card-container::-webkit-scrollbar-thumb,
+.carousel-wrapper::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 3px;
+}
+
+.card-container::-webkit-scrollbar-button,
+.carousel-wrapper::-webkit-scrollbar-button {
+  display: none;
+}
 
 .card {
   flex: 0 0 auto; /* fixed width */
@@ -189,10 +215,11 @@ header nav a:hover {
   text-decoration: none;
   color: white;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 20px;
   transition: color 0.3s ease;
 }
 
 .poem-card-last a:hover {
   color: #005bb5;
 }
+
