@@ -227,6 +227,9 @@ header nav a:hover {
 }
 
 @media (max-width: 600px) {
+    .title{
+      font-size: 1.6rem;
+    }
     header nav a {
         font-size: 0.8rem;
     }
@@ -235,7 +238,7 @@ header nav a:hover {
         gap: 10px;
     }
     .poem-card {
-        font-size: 0.7rem;
+        font-size: 0.8rem;
         line-height: 1.2;
     }
 
@@ -243,42 +246,27 @@ header nav a:hover {
     .container {
         flex-direction: column; /* Stack menu on top of content */
         align-items: stretch;
+
     }
 
     .side-menu {
         flex-direction: row;
         justify-content: center;
         border-right: none;
-        border-bottom: 2px solid rgba(255, 255, 255, 0.6);
         width: 100%;
-        padding: 10px;
-        position: static; /* no fixed positioning */
-        background-color: rgba(red, green, blue, 1); /* white box background */
-        color: white; /* adjust text color for white background */
+        padding: 5px 8px; /* smaller padding */
+        gap: 1px; /* smaller gap between buttons */
+        position: static;
+        background-color: #2c2e5a; /* matches card background */
     }
 
     .side-menu button {
-        font-size: 0.9rem;
-        color: white; /* make text visible on white */
+        font-size: 1rem; /* smaller text */
+        padding: 4px 8px; /* smaller button area */
     }
+}
 
     /* Push carousel content down if needed */
     .carousel-wrapper {
         margin-top: 0;
     }
-  .title {
-    text-align: center;
-    font-size: 1.5rem;
-    margin: 20px 0;
-    }
-  .container {
-  display: flex;
-  background-color: #2c2e5a;
-  border-radius: 20px;
-  padding: 5px;
-  gap: 15px;
-  margin: 0 auto;
-  max-width: 90%;
-  align-items: stretch;
-}
-}
