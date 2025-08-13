@@ -127,7 +127,7 @@ header nav a:hover {
 
 
 .carousel-wrapper {
-  overflow: hidden;
+  overflow-x: auto;
   width: 100%;
 }
 
