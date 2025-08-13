@@ -1,230 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Teachers' Day 2025 | Graphic Era Alumni Association</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="styles.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Teachers’ Day 2025</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Lusitana:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <header>
-    <h1>Teachers' Day 2025</h1>
-    <p>Graphic Era Alumni Association</p>
-  </header>
+<header>
+  <div class="logo">
+    <img src="pic1.png" height="250px" alt="GEAA Logo">
+    <h1></h1>
+  </div>
+  <nav>
+    <a href="#">Home</a>
+    <a href="pages/messages.html">All Messages & Poems</a>
+    <a href="pages/collage.html">The Collage</a>
+  </nav>
+</header>
 
-  <section class="testimonials-section" id="testimonialSection">
-    <h2>Alumni Contributions</h2>
-    <div class="tab-buttons">
-      <button class="tab-button active" onclick="showTab('messages')">Messages</button>
-      <button class="tab-button" onclick="showTab('poems')">Poems</button>
+<h1 class="title">Happy Teachers’ Day 2025</h1>
+
+<div class="container">
+  <!-- Left Menu -->
+  <div class="side-menu">
+  <button onclick="selectSidebar(this); showMessages()">Messages</button>
+  <button onclick="selectSidebar(this); showPoems()">Poems</button>
+</div>
+
+<div class="carousel-wrapper">
+  <div class="carousel-track" id="carouselTrack">
+    <!-- Cards -->
+    <div class="card">
+      <p class="message">
+        Happy teachers day<br>
+        Thank you for your patience, dedication, and the endless inspiration you give every day.<br>
+        You don’t just teach lessons — you shape lives, spark dreams, and build the future.<br>
+        We’re forever grateful for your guidance and the difference you make.
+      </p>
+      <p class="sender">- Mahima Dang, B.Com(H)</p>
+      <p class="details">2019, GEHU, Bhimtal</p>
     </div>
 
-    <div class="testimonial-grid" id="messagesTab"></div>
-    <div class="poem-grid" id="poemsTab" style="display: none;"></div>
-  </section>
+    <div class="card">
+      <p class="message">
+        You weren’t just chalk and talk:<br>
+        You were patience, power, and pure magic✨<br>
+        गुरु का ज्ञान वो विरासत है, जो ज़िंदगी भर साथ चलती है।<br>
+        Thank you for being my forever compass🙏
+      </p>
+      <p class="sender">- Arihanta Jain, BBA</p>
+      <p class="details">2016, GEHU, Bhimtal</p>
+    </div>
 
-  <div class="submit-button-container">
-    <button class="submit-button" onclick="toggleForm()">Submit Your Message or Poem</button>
+    <div class="card">
+      <p class="message">
+        Thank you to all the department of English Honours teachers,<br>
+        specially Devika Ma'am, Anamika Ma'am, Shipra Ma'am and Yachna Ma'am<br>
+        who supports me in every stairs of life and understands me.
+      </p>
+      <p class="sender">- Jashan Deep, BA / BA (Hons) / MA</p>
+      <p class="details">2020, GEHU, Dehradun</p>
+    </div>
+
+    <div class="card">
+      <p class="message">
+        Thank you to all the teachers from the Agriculture Department who have given us valuable practical and theoretical knowledge.<br>
+        Wishing you all a very Happy Teachers' Day.
+      </p>
+      <p class="sender">- Neha, Others</p>
+      <p class="details">2025, GEHU, Dehradun</p>
+    </div>
+    <div class="card message-final">
+      <a href="pages/messages.html">See All Messages<br>Click Here</a>
+    </div>
   </div>
+</div>
+<script>
+  
+function selectSidebar(button) {
+  document.querySelectorAll('.side-menu button')
+    .forEach(btn => btn.classList.remove('active'));
+  button.classList.add('active');
+}
 
-  <div class="form-section" id="formSection">
-    <h2>Submit Your Message or Poem</h2>
-    <form id="contact-form">
-      <label>Name:
-        <input type="text" name="name" required />
-      </label>
+function showMessages() {
+  const container = document.getElementById('carouselTrack');
+  container.innerHTML = `
+    <div class="card">
+      <p class="message">
+        Happy teachers day<br>
+        Thank you for your patience, dedication, and the endless inspiration you give every day.<br>
+        You don’t just teach lessons — you shape lives, spark dreams, and build the future.<br>
+        We’re forever grateful for your guidance and the difference you make.
+      </p>
+      <p class="sender">- Mahima Dang, B.Com(H)</p>
+      <p class="details">2019, GEHU, Bhimtal</p>
+    </div>
 
-      <label>Batch:
-        <select name="batch" required>
-          <option value="">Select Batch</option>
-          <!-- Batches from 1998–2025 -->
-          <script>
-            for (let year = 1998; year <= 2025; year++) {
-              document.write(`<option value="${year}">${year}</option>`);
-            }
-          </script>
-        </select>
-      </label>
+    <div class="card">
+      <p class="message">
+        You weren’t just chalk and talk:<br>
+        You were patience, power, and pure magic✨<br>
+        गुरु का ज्ञान वो विरासत है, जो ज़िंदगी भर साथ चलती है।<br>
+        Thank you for being my forever compass🙏
+      </p>
+      <p class="sender">- Arihanta Jain, BBA</p>
+      <p class="details">2016, GEHU, Bhimtal</p>
+    </div>
 
-      <label>Course:
-        <select name="course" required>
-          <option value="">Select Course</option>
-          <option>B.Tech</option>
-          <option>M.Tech</option>
-          <option>BCA</option>
-          <option>MCA</option>
-          <option>BBA</option>
-          <option>MBA</option>
-          <option>B.Com(H)</option>
-          <option>B.Pharma</option>
-        </select>
-      </label>
-<label>Campus:
-        <select name="campus" required>
-          <option value="">Select Campus</option>
-          <option>GEU, Dehradun</option>
-          <option>GEHU, Dehradun</option>
-          <option>GEHU, Bhimtal</option>
-          <option>GEHU, Haldwani</option>
-        </select>
-      </label>
-      <label>Message or Poem:
-        <textarea name="message" rows="5" required></textarea>
-      </label>
-      <label>Share your memories/Image Link(if any):
-        <textarea name="imageurl" rows="2" ></textarea>
-      </label>
-        
-      </label>
-      <button type="submit">Send</button>
-    </form>
-  </div>
+    <div class="card">
+      <p class="message">
+        Thank you to all the department of English Honours teachers,<br>
+        specially Devika Ma'am, Anamika Ma'am, Shipra Ma'am and Yachna Ma'am<br>
+        who supports me in every stairs of life and understands me.
+      </p>
+      <p class="sender">- Jashan Deep, BA / BA (Hons) / MA</p>
+      <p class="details">2020, GEHU, Dehradun</p>
+    </div>
 
-  <script>
-const p1 = `To My Guides in the Journey of Words
-        First step in college, a little unsure,
-        Shipra Ma’am, your lessons opened the door.
-        Your voice turned fear to eager delight,
-        You made the first semester truly bright.
-        Yachna Ma’am, with laughter and grace,
-        Tests I feared, but free time was ace.
-        Your warmth made every moment new,
-        A teacher, a friend, I thank you.
-        Devika Ma’am, sweetest soul of the lot,
-In every line, your kindness I caught.
-You made literature feel like a song,
-Guiding us gently, carrying us along.
+    <div class="card">
+      <p class="message">
+        Thank you to all the teachers from the Agriculture Department who have given us valuable practical and theoretical knowledge.<br>
+        Wishing you all a very Happy Teachers' Day.
+      </p>
+      <p class="sender">- Neha, Others</p>
+      <p class="details">2025, GEHU, Dehradun</p>
+    </div>
 
-Amar Sir, still a mentor today,
-Your wisdom shaped my professional way.
-From first mail correction to lessons profound,
-Your guidance is where my strength is found.
+    <div class="card message-final">
+      <a href="pages/messages.html">See All Messages<br>Click Here</a>
+    </div>
+  `;
+}
 
-Anshu Ma’am, your “YOU” gave us fear,
-But your “HMM” brought the answers near.
-I cherished each class, challenge and all,
-With you, I learned to never stall.
+function showPoems() {
+  const container = document.getElementById('carouselTrack');
+  container.innerHTML = `
+    <div class="card poem-card">
+      <p class="message poem-card">I was a shadow, quiet and small,<br>
+In halls once filled with Knowledge and cheer,<br>
+Your words still echo, calm and clear.<br>
+You lit the path, you showed the way,<br>
+And shaped the lives that walked away.<br>
+Though years have passed, your light remains—<br>
+A guiding star through joys and strains.<br>
+So here's my thanks, both deep and true,<br>
+For all you are, and all you do.<br>
 
-Arpita Ma’am, though you’ve moved away,
-Your kindness and maturity still stay.
-Thank you for Hackathon and every smile,
-You made the journey worthwhile.
+Happy Teachers’ Day!
 
-And Vipin Sir, our guiding star,
-Always supportive, you raised the bar.
-For standing with us through every tide,
-Thank you for walking by our side.
+</p>
+      <p class="sender">- Tripti Manral, Ba.JMC</p>
+      <p class="details">2023, GEHU-Dehradun</p>
+    </div>
 
-To all my mentors, near or far,
-You shaped who I am, you lit my star.`;
+    <div class="card poem-card">
+      <p class="message">
+भाव में तो निर्मलता है, जीवन में सविनय ही रहे।<br>
+संचित कर भंडार ज्ञान का, वाणी में है प्रेम बहे।।<br><br>
+लौकिक कर कितने ही तन-मन, अल्प न दम्भ जताए जो।<br>
+अपनी ज्ञप्ति के ही मूल पर, शिक्षक हैं कहलाये वो।।<br><br>
+शिष्य के शीर्ष पे हाथ जो रखते, तम सारा मिटला देते।<br>
+सत्य की राह पर चलें सदा हम, वो हमसे इतना कहते।।<br><br>
+हो अर्जुन या कोई कर्ण हो, द्रोण-परशु बिन अधूरे हैं।<br>
+संदीपन जब मिले कृष्ण से, तभी कन्हैया पूरे हैं।।<br><br>
+शीश नवा के इनको अर्पण, चरणों में इनके सब धाम।<br>
+राम को जो श्री राम बना दे, गुरु वशिष्ठ के हैं ये काम।।"</p>
+      <p class="sender">- Shivam Singh,B.Tech</p>
+      <p class="details">2014, GEHU-Dehraduns</p>
+    </div>
 
+    <div class="card poem-card">
+      <p class="message">I was a shadow, quiet and small,
+No voice to rise, no dream to call.
+Through life I walked, unsure, alone,
+A seed unwatered, never grown.<br><br>
+Then came a guide, so pure, so kind,
+Who lit the lamps within my mind.
+With every word, with every smile,
+He taught me dreams are worth the while.<br><br>
+Like flowers bloom in morning’s hue,
+He shaped my soul, my courage too.
+From dust to gold, from night to day,
+He showed me love will light the way.<br><br>
+If fragrance clings to those who care,
+It’s 'cause their goodness lingers there.
+Dr. Prabh Deep Singh—my guiding star,
+Who made me see how bright we are.<br><br>
+From zero’s shell, I’ve found my flight,
+All thanks to him who gave me light.<
+      <p class="sender">- Adarsh Singh, B. Pharma</p>
+      <p class="details">2024, GEHU</p>
+    </div>
 
+    <div class="card poem-card-last">
+      <a href="pages/messages.html">See All Poems</a>
+    </div>
+  `;
 
-    
-    // Add this script to your HTML file
-const form = document.getElementById('contact-form');
-const scriptURL = 'https://script.google.com/macros/s/AKfycbw6kioS7LNMPXN0Lu18A03X4Ha8TI5BTEtwmlJSrOTQOltKUW7iQizAlXPNbHjxwDov8Q/exec';
+}
 
-form.addEventListener('submit', e => {
-  e.preventDefault(); // This is the crucial line that stops the page from redirecting
-  const submitButton = form.querySelector('button[type="submit"]');
-  submitButton.disabled = true;
-  submitButton.textContent = 'Sending...';
+// Start with messages slider on page load
+window.onload = showMessages;
 
-  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-    .then(response => {
-      alert('Thank you! Your message has been sent successfully.');
-      form.reset();
-      submitButton.disabled = false;
-      submitButton.textContent = 'Send';
-    })
-    .catch(error => {
-      console.error('Error!', error.message);
-      alert('Oops! There was a problem submitting your form.');
-      submitButton.disabled = false;
-      submitButton.textContent = 'Send';
-    });
-});
-    
-    const feedbacks = [
-      { name: "Aditya Sati (BCA 2017) GEHU Bhimtal", msg: "I would like to express my heartfelt gratitude to all my faculties for their unwavering support and guidance throughout my BCA journey. A special thanks to Sandeep Budhani Sir and Geeta Rautela Ma'am your encouragement and mentorship have played a vital role.\nTime may move on, but the memories and lessons you've given us will always remain with us. Thank you, Teachers!" },
-      { name: "Mahima Dang (B.Com H 2019) GEHU Bhimtal", msg: "Happy teachers day! \nThank you for your patience, dedication, and the endless inspiration you give every day. You don’t just teach lessons — you shape lives, spark dreams, and build the future. \nWe’re forever grateful for your guidance and the difference you make." },
-      { name: "Sanjay Singh (MBA 2015) GEHU Bhimtal", msg: "A heartfelt Teacher's Day wish to all the lovely teachers who guided me and molded me into the person I am today. I am very grateful for all the values instilled in me and the blessings showered upon me." },
-      { name: "Akshita Sharma  (BAJMC 2020) GEHU Dehradun", msg: "Happy Teachers' Day! I’m so grateful for your constant support, endless patience, and the way you make learning feel exciting. You've not only taught lessons from books but also life. You truly made a lasting impact—thank you!" },
-      { name: "Nikit Bhatt  (B.Com H 2020) GEHU Bhimtal", msg: "A heartfelt Teacher's Day wish to all the lovely teachers who guided me and molded me into the person I am today. I am very grateful for all the values instilled in me and the blessings showered upon me. A very special mention to Kavita Khati Ma'am and Sandeep sir. Dear Kavita Ma'am,You are gem of a person and a lovely teacher. You guided us professionally as well as you always mingled & enjoyed every moment with us as a friend. I will cherish all the memories forever. Gratitude and Lots of love❤️.Dear Sandeep sir, A very special thanks to you for always guiding us to be successful. You made learning easy and made sure everyone instill good values wherever we go. I feel very grateful to be your student. A hearty Teacher's day to you." },
-      { name: "Aman Kumar  (B.Tech(ECE) 2019) GEU, Dehradun", msg: " Thanks to all the ECE faculties for guiding us during and after the course. I am forever grateful to all the faculties there. We (ECE) have very good teacher's team there who are very much dedicated for shaping our future." },
-      { name: "Aditi Bhandari  (BA 2024) GEHU, Dehradun", msg: "Happy Teachers’ Day to all my wonderful teachers ! I’ll be forever grateful to each one of you who encouraged, guided and supported me in becoming a better version of myself. I genuinely believe that each one of you played a part in shaping the person I’m today and the one I’m becoming. You all taught the lessons beyond textbooks. I really hope to make you all proud someday. Thank you for everything, dear teachers ." },
-      { name: "Medha Chauhan (BAJMC 2025) GEHU, Dehradun", msg: "I've been thoroughly impressed by the Media and Mass Communication department's supportive and collaborative environment. The entire department is incredibly kind, helpful, and always willing to lend a hand. Vipul Sir and Aakriti Ma'am stand out for their friendly demeanor, making us feel at ease and offering assistance in every situation. Meanwhile, Himani Ma'am, Girja Sir, and Sandeep Sir are academically focused, providing invaluable guidance with our assignments and studies. What's remarkable is the way Himani Ma'am goes above and beyond, treating us like her own children. Overall, the department's collective approach has made my experience truly enriching and memorable." }
-    ];
+</script>
 
-    const poems = [
-      {
-        title: "A Tribute to My Teacher",
-        lines: `"You weren’t just chalk and talk:
-You were patience, power, and pure magic✨
-“गुरु का ज्ञान वो विरासत है, जो ज़िंदगी भर साथ चलती है।”
-Thank you for being my forever compass🙏"`,
-        author: "Arihanta Jain	(BBA 2016) GEHU, Bhimtal"
-      },
-      {
-        title: "To the Guiding Light",
-        lines: `In chalk and board, you built my dreams,\nMore powerful than a thousand reams.\nNot just a teacher, but a guide,\nIn every storm, you stood beside.`,
-        author: "Raghav Joshi (B.Tech 2017)"
-      },
-      {
-        title: "To Dear Teachers",
-        lines: p1,
-author: "Shivani Rawat	(BA(H) 2018) GEHU,Dehradun"
-      }
-    ];
-
-    const colors = ['sticky-yellow', 'sticky-blue', 'sticky-green', 'sticky-pink'];
-    let currentIndex = 0;
-
-    function renderTestimonials() {
-      const container = document.getElementById('messagesTab');
-      container.innerHTML = '';
-      for (let i = 0; i < 4; i++) {
-        const index = (currentIndex + i) % feedbacks.length;
-        const feedback = feedbacks[index];
-        const div = document.createElement('div');
-        div.className = `sticky-note ${colors[i % colors.length]}`;
-        div.innerHTML = `${feedback.msg}<strong>– ${feedback.name}</strong>`;
-        container.appendChild(div);
-      }
-      currentIndex = (currentIndex + 4) % feedbacks.length;
-    }
-
-    function renderPoems() {
-      const container = document.getElementById('poemsTab');
-      container.innerHTML = '';
-      poems.forEach(poem => {
-        const div = document.createElement('div');
-        div.className = 'poem-card';
-        div.innerHTML = `<strong>${poem.title}</strong><p>${poem.lines.replace(/\n/g, '<br>')}</p><strong>– ${poem.author}</strong>`;
-        container.appendChild(div);
-      });
-    }
-
-    function showTab(tab) {
-      document.getElementById('messagesTab').style.display = (tab === 'messages') ? 'grid' : 'none';
-      document.getElementById('poemsTab').style.display = (tab === 'poems') ? 'grid' : 'none';
-      document.querySelectorAll('.tab-button').forEach(btn => {
-        btn.classList.remove('active');
-        if (btn.textContent.toLowerCase() === tab) btn.classList.add('active');
-      });
-    }
-
-    function toggleForm() {
-      const form = document.getElementById('formSection');
-      form.classList.add('show');
-      form.scrollIntoView({ behavior: 'smooth' });
-    }
-
-    renderTestimonials();
-    renderPoems();
-    setInterval(renderTestimonials, 8000);
-  </script>
 </body>
 </html>
