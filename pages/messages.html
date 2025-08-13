@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Teachers’ Day 2025</title>
+<link rel="stylesheet" href="../css/messages.css">
+<link href="https://fonts.googleapis.com/css2?family=Lusitana:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <img src="../pic1.png" height="250px" alt="GEAA Logo">
+    <h1></h1>
+  </div>
+  <nav>
+    <a href="../index.html">Home</a>
+    <a href="#">All Messages & Poems</a>
+    <a href="#">The Collage</a>
+  </nav>
+</header>
+
+<h1 class="title">Poems And Messages From Our Alumni</h1>
+
+<div class="container">
+  <!-- Left Menu -->
+  <div class="side-menu">
+  <button onclick="selectSidebar(this); showMessages()">Messages</button>
+  <button onclick="selectSidebar(this); showPoems()">Poems</button>
+</div>
+
+<div class="carousel-wrapper">
+  <div class="carousel-track" id="carouselTrack">
+    <!-- Cards -->
+    <div class="card">
+      <p class="message">
+        Happy teachers day<br>
+        Thank you for your patience, dedication, and the endless inspiration you give every day.<br>
+        You don’t just teach lessons — you shape lives, spark dreams, and build the future.<br>
+        We’re forever grateful for your guidance and the difference you make.
+      </p>
+      <p class="sender">- Mahima Dang, B.Com(H)</p>
+      <p class="details">2019, GEHU, Bhimtal</p>
+    </div>
+
+    <div class="card">
+      <p class="message">
+        You weren’t just chalk and talk:<br>
+        You were patience, power, and pure magic✨<br>
+        गुरु का ज्ञान वो विरासत है, जो ज़िंदगी भर साथ चलती है।<br>
+        Thank you for being my forever compass🙏
+      </p>
+      <p class="sender">- Arihanta Jain, BBA</p>
+      <p class="details">2016, GEHU, Bhimtal</p>
+    </div>
+
+    <div class="card">
+      <p class="message">
+        Thank you to all the department of English Honours teachers,<br>
+        specially Devika Ma'am, Anamika Ma'am, Shipra Ma'am and Yachna Ma'am<br>
+        who supports me in every stairs of life and understands me.
+      </p>
+      <p class="sender">- Jashan Deep, BA / BA (Hons) / MA</p>
+      <p class="details">2020, GEHU, Dehradun</p>
+    </div>
+
+    <div class="card">
+      <p class="message">
+        Thank you to all the teachers from the Agriculture Department who have given us valuable practical and theoretical knowledge.<br>
+        Wishing you all a very Happy Teachers' Day.
+      </p>
+      <p class="sender">- Neha, Others</p>
+      <p class="details">2025, GEHU, Dehradun</p>
+    </div>
+    <div class="card message-final">
+      <a href="pages/messages.html">See All Messages<br>Click Here</a>
+    </div>
+  </div>
+</div>
+<script>
+  
+function selectSidebar(button) {
+  document.querySelectorAll('.side-menu button')
+    .forEach(btn => btn.classList.remove('active'));
+  button.classList.add('active');
+}
+
+function showMessages() {
+  const container = document.getElementById('carouselTrack');
+  container.innerHTML = `
+    <div class="card">
+      <p class="message">
+        Happy teachers day<br>
+        Thank you for your patience, dedication, and the endless inspiration you give every day.<br>
+        You don’t just teach lessons — you shape lives, spark dreams, and build the future.<br>
+        We’re forever grateful for your guidance and the difference you make.
+      </p>
+      <p class="sender">- Mahima Dang, B.Com(H)</p>
+      <p class="details">2019, GEHU, Bhimtal</p>
+    </div>
+
+    <div class="card">
+      <p class="message">
+        You weren’t just chalk and talk:<br>
+        You were patience, power, and pure magic✨<br>
+        गुरु का ज्ञान वो विरासत है, जो ज़िंदगी भर साथ चलती है।<br>
+        Thank you for being my forever compass🙏
+      </p>
+      <p class="sender">- Arihanta Jain, BBA</p>
+      <p class="details">2016, GEHU, Bhimtal</p>
+    </div>
+
+    <div class="card">
+      <p class="message">
+        Thank you to all the department of English Honours teachers,<br>
+        specially Devika Ma'am, Anamika Ma'am, Shipra Ma'am and Yachna Ma'am<br>
+        who supports me in every stairs of life and understands me.
+      </p>
+      <p class="sender">- Jashan Deep, BA / BA (Hons) / MA</p>
+      <p class="details">2020, GEHU, Dehradun</p>
+    </div>
+
+    <div class="card">
+      <p class="message">
+        Thank you to all the teachers from the Agriculture Department who have given us valuable practical and theoretical knowledge.<br>
+        Wishing you all a very Happy Teachers' Day.
+      </p>
+      <p class="sender">- Neha, Others</p>
+      <p class="details">2025, GEHU, Dehradun</p>
+    </div>
+
+    <div class="card message-final">
+      <a href="pages/messages.html">See All Messages<br>Click Here</a>
+    </div>
+  `;
+}
+
+function showPoems() {
+  const container = document.getElementById('carouselTrack');
+  container.innerHTML = `
+    <div class="card poem-card">
+      <p class="message poem-card">I was a shadow, quiet and small,<br>
+In halls once filled with Knowledge and cheer,<br>
+Your words still echo, calm and clear.<br>
+You lit the path, you showed the way,<br>
+And shaped the lives that walked away.<br>
+Though years have passed, your light remains—<br>
+A guiding star through joys and strains.<br>
+So here's my thanks, both deep and true,<br>
+For all you are, and all you do.<br>
+
+Happy Teachers’ Day!
+
+</p>
+      <p class="sender">- Tripti Manral, Ba.JMC</p>
+      <p class="details">2023, GEHU-Dehradun</p>
+    </div>
+
+    <div class="card poem-card">
+      <p class="message">
+भाव में तो निर्मलता है, जीवन में सविनय ही रहे।<br>
+संचित कर भंडार ज्ञान का, वाणी में है प्रेम बहे।।<br><br>
+लौकिक कर कितने ही तन-मन, अल्प न दम्भ जताए जो।<br>
+अपनी ज्ञप्ति के ही मूल पर, शिक्षक हैं कहलाये वो।।<br><br>
+शिष्य के शीर्ष पे हाथ जो रखते, तम सारा मिटला देते।<br>
+सत्य की राह पर चलें सदा हम, वो हमसे इतना कहते।।<br><br>
+हो अर्जुन या कोई कर्ण हो, द्रोण-परशु बिन अधूरे हैं।<br>
+संदीपन जब मिले कृष्ण से, तभी कन्हैया पूरे हैं।।<br><br>
+शीश नवा के इनको अर्पण, चरणों में इनके सब धाम।<br>
+राम को जो श्री राम बना दे, गुरु वशिष्ठ के हैं ये काम।।"</p>
+      <p class="sender">- Shivam Singh,B.Tech</p>
+      <p class="details">2014, GEHU-Dehraduns</p>
+    </div>
+
+    <div class="card poem-card">
+      <p class="message">I was a shadow, quiet and small,
+No voice to rise, no dream to call.
+Through life I walked, unsure, alone,
+A seed unwatered, never grown.<br><br>
+Then came a guide, so pure, so kind,
+Who lit the lamps within my mind.
+With every word, with every smile,
+He taught me dreams are worth the while.<br><br>
+Like flowers bloom in morning’s hue,
+He shaped my soul, my courage too.
+From dust to gold, from night to day,
+He showed me love will light the way.<br><br>
+If fragrance clings to those who care,
+It’s 'cause their goodness lingers there.
+Dr. Prabh Deep Singh—my guiding star,
+Who made me see how bright we are.<br><br>
+From zero’s shell, I’ve found my flight,
+All thanks to him who gave me light.<
+      <p class="sender">- Adarsh Singh, B. Pharma</p>
+      <p class="details">2024, GEHU</p>
+    </div>
+
+    <div class="card poem-card-last">
+      <a href="pages/messages.html">See All Poems</a>
+    </div>
+  `;
+
+}
+
+// Start with messages slider on page load
+window.onload = showMessages;
+
+</script>
+
+</body>
+</html>
