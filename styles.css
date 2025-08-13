@@ -7,32 +7,35 @@ body {
 }
 
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
+    display: flex;
+    justify-content: space-between; /* space between logo & nav */
+    align-items: center; /* vertically center everything */
+    padding: 10px 20px;
+    background-color: #0b0b3b; /* match your styles.css color */
 }
 
 header .logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+    display: flex;
+    align-items: center; /* keep logo and text aligned */
+    gap: 10px;
+    height: 100px;
 }
 
-header .logo img {
-  height: 50px;
+header nav {
+    display: flex;
+    gap: 20px; /* spacing between links */
 }
 
 header nav a {
-  color: white;
-  text-decoration: none;
-  margin-left: 20px;
-  font-weight: bold;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
 }
 
 header nav a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
+
 
 .title {
   text-align: center;
@@ -223,3 +226,44 @@ header nav a:hover {
   color: #005bb5;
 }
 
+@media (max-width: 600px) {
+    header nav a {
+        font-size: 0.8rem;
+    }
+    header {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .poem-card {
+        font-size: 0.7rem;
+        line-height: 1.2;
+    }
+
+    /* Sidebar inside white box */
+    .container {
+        flex-direction: column; /* Stack menu on top of content */
+        align-items: stretch;
+    }
+
+    .side-menu {
+        flex-direction: row;
+        justify-content: center;
+        border-right: none;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.6);
+        width: 100%;
+        padding: 10px;
+        position: static; /* no fixed positioning */
+        background-color: rgba(red, green, blue, 1); /* white box background */
+        color: white; /* adjust text color for white background */
+    }
+
+    .side-menu button {
+        font-size: 0.9rem;
+        color: white; /* make text visible on white */
+    }
+
+    /* Push carousel content down if needed */
+    .carousel-wrapper {
+        margin-top: 0;
+    }
+}
