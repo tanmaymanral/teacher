@@ -88,3 +88,37 @@ header nav a {
   font-size: 14px;
   color: #444;
 }
+
+.filter-buttons {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.filter-buttons button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 8px;
+  background: #006781;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.filter-buttons button:hover {
+  background: #004d61;
+}
+
+@media (max-width: 600px) {
+    .title{
+      font-size: 1.6rem;
+    }
+    header nav a {
+        font-size: 0.8rem;
+    }
+    header {
+        flex-direction: column;
+        gap: 10px;
+    }
+  }
