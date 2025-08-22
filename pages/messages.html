@@ -15,13 +15,16 @@
   </div>
   <nav>
     <a href="../index.html">Home</a>
-    <a href="#">All Messages & Poems</a>
-    <a href="#">The Collage</a>
+    <a href="messages.html">All Messages & Poems</a>
+    <a href="collage.html">The Collage</a>
   </nav>
 </header>
 
 <h1 class="title">Poems And Messages From Our Alumni</h1>
-
+<div class="filter-buttons">
+  <button onclick="showMessages()">Messages</button>
+  <button onclick="showPoems()">Poems</button>
+</div>
 <div id="messages-container"></div>
 
 <!-- Import messages -->
@@ -31,17 +34,31 @@
 <script>
   const container = document.getElementById("messages-container");
 
-  messages.forEach((msg, index) => {
-    const card = document.createElement("div");
-    card.classList.add("message-card");
+  function renderItems(items) {
+    container.innerHTML = ""; // Clear previous items
+    items.forEach((msg) => {
+      const card = document.createElement("div");
+      card.classList.add("message-card");
 
-    card.innerHTML = `
-      <p class="message-text">${msg.text}</p>
-      <p class="message-author">- ${msg.author}</p>
-    `;
+      card.innerHTML = `
+        <p class="message-text">${msg.text}</p>
+        <p class="message-author">- ${msg.author}</p>
+      `;
 
-    container.appendChild(card);
-  });
+      container.appendChild(card);
+    });
+  }
+
+  function showMessages() {
+    renderItems(messages);
+  }
+
+  function showPoems() {
+    renderItems(poems);
+  }
+
+  // By default show messages when page loads
+  showMessages();
 </script>
 
 </body>
