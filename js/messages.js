@@ -10,29 +10,22 @@ We’re forever grateful for your guidance and the difference you make.
     author: "Mahima Dang	2019	B.Com(H)	GEHU, Bhimtal"
   },
   {
-    text: `"I would like to express my heartfelt gratitude to all my faculties for their unwavering support and guidance throughout my BCA journey. A special thanks to Sandeep Budhani Sir and Geeta Rautela Ma'am your encouragement and mentorship have played a vital role.
+    text: `I would like to express my heartfelt gratitude to all my faculties for their unwavering support and guidance throughout my BCA journey. A special thanks to Sandeep Budhani Sir and Geeta Rautela Ma'am your encouragement and mentorship have played a vital role.
 
 Time may move on, but the memories and lessons you've given us will always remain with us.
-Thank you, Teachers!"
+Thank you, Teachers!
 `,
     author: "Aditya Sati	2017	BCA	GEHU, Bhimtal"
   },
   {
-    text: `"A heartfelt Teacher's Day wish to all the lovely teachers who guided me and molded me into the person I am today. I am very grateful for all the values instilled in me and the blessings showered upon me.
+    text: `A heartfelt Teacher's Day wish to all the lovely teachers who guided me and molded me into the person I am today. I am very grateful for all the values instilled in me and the blessings showered upon me.
     
     A very special mention to Kavita Khati Ma'am and Sandeep sir.
 
 `,
     author: "Nikit Bhatt 	2020	B.Com(H)	GEHU, Bhimtal"
   },
-  {
-    text: `Dear Sandeep sir,
-A very special thanks to you for always guiding us to be successful. You made learning easy and made sure everyone instill good values wherever we go. I feel very grateful to be your student.
-A hearty Teacher's day to you.
-
-`,
-    author: "Nikit Bhatt 	2020	B.Com(H)	GEHU, Bhimtal"
-  },
+  
   {
     text: `You weren’t just chalk and talk:\nYou were patience, power, and pure magic✨\n
     गुरु का ज्ञान वो विरासत है, जो ज़िंदगी भर साथ चलती है।\n
@@ -50,6 +43,16 @@ You are gem of a person and a lovely teacher. You guided us professionally as we
     text: `Heartfelt thanks to all the teachers for guiding our hands and hearts with care , enriching us with seeds of dreams to share. 
 `,
     author: "Atul Anand	2025	Others	GEHU, Dehradun"
+  },
+  {
+    text: `Thank you for your dedication, guidance, hard work and for making learning enjoyable.
+`,
+    author: "Vidushi Phull Soni 	2024	BA. JMC	GEHU, Dehradun"
+  },
+  {
+    text: `Thank you for making me what i am today. Thank you for shaping my future. 
+`,
+    author: "Prabhat kumar	2016	B.Tech(ECE)	GEU/GEIT"
   },
   {
     text: `Happy Teachers’ Day to all my wonderful teachers ! I’ll be forever grateful to each one of you who encouraged, guided and supported me in becoming a better version of myself. I genuinely believe that each one of you played a part in shaping the person I’m today and the one I’m becoming. You all taught the lessons beyond textbooks. I really hope to make you all proud someday. Thank you for everything, dear teachers .
@@ -235,6 +238,20 @@ Sincerely,
     author: "Aayush Nautiyal	2024	BBA	GEHU, Dehradun"
   },
   {
+    text: `Dear Sandeep sir,
+A very special thanks to you for always guiding us to be successful. You made learning easy and made sure everyone instill good values wherever we go. I feel very grateful to be your student.
+A hearty Teacher's day to you.
+
+`,
+    author: "Nikit Bhatt 	2020	B.Com(H)	GEHU, Bhimtal"
+  },
+  {
+    text: `Thank-you for your guidance and shaping my career 
+    `,
+    author:"Atul Anand	2025	Others	GEHU, Dehradun"
+
+  },
+  {
     text: `"Your lessons go beyond textbooks.
 Happy Teachers' Day! Your guidance has shaped us into who we are today.
 Missing you all 💝"
@@ -275,6 +292,7 @@ Saurabh Fulara PDP
     author:"Aman	2025	BBA	GEHU, Dehradun  "
 
   },
+  
   {
     text: `My Dear Teachers - Thankyou for guiding us with patience and kindness.Your dedication to teaching is truly inspiring.I am forever grateful for your presence!
     `,
@@ -302,7 +320,8 @@ I hope you remember.🤗"
     `,
     author:"Sneha Joshi 	2023	B.Com (Hons)	GEHU, Bhimtal"
 
-  },{
+  },
+  {
     text: `Happy Teachers’ Day!
 
 Dear Sir/ Ma’am,
@@ -314,6 +333,51 @@ With gratitude,
 `,
     author: "Shapath Gupta	2014	MBA	GEU, Dehradun"
   },
+  {
+    text: `I've been thoroughly impressed by the Media and Mass Communication department's supportive and collaborative environment. The entire department is incredibly kind, helpful, and always willing to lend a hand. Vipul Sir and Aakriti Ma'am stand out for their friendly demeanor, making us feel at ease and offering assistance in every situation. Meanwhile, Himani Ma'am, Girja Sir, and Sandeep Sir are academically focused, providing invaluable guidance with our assignments and studies. What's remarkable is the way Himani Ma'am goes above and beyond, treating us like her own children. Overall, the department's collective approach has made my experience truly enriching and memorable.
+
+`,
+    author: "Medha Chauhan	2025	BA. JMC	GEHU, Dehradun"
+  },
+  {
+    text: `The Man Who Made Me From Zero to Something
+In my life, I have met many people who told me, “Bhaiya, you are my inspiration” or “Sir, you are my inspiration.” But the most important thing is who is my inspiration?
+It is the person who transformed an ordinary child into someone people admire and consider their inspiration. And that person is none other than my guide, Dr. Prabh Deep Singh Sir.
+You know the saying, "If you immerse yourself in fragrance, you too will start smelling sweet"—that’s exactly what happened to me. He is someone loved by everyone, and if you stay with him, walk the path he shows, you too will become like him one day. Because a good person will always inspire and guide others to become good as well.
+I believe this is the reason I have become what I am today. I thank God for introducing me to such a person, who took me from being a complete zero to the person I am today.
+`,
+    author: "Yogendra Bharadwaj	2020	B.Tech CSE	GEU, Dehradun"
+  },
+  {
+    text: `"Teachers plant seeds of knowledge that grow into lifelong learning and dreams. Thank you for nurturing minds and shaping futures.
+I am very grateful to be part of such well recognised University.And I am very thankful to my teachers.They always support me in every situation. Thank you for always guiding me . 
+Farha ma'am and  Kavita ma'am -You both are my pillar of strength.
+Bhavesh Sir and Sandeep Sir - The ultimate pool of knowledge.
+Manjot Ma'am - The beautiful personality 
+Nidhi Pant ma'am - The source of positiveness 
+Surbhi ma'am -Most joyful and happy personality 
+Nidhi Joshi ma'am -Most coolest faculty 
+Prakash Sir - Epitome of knowledge 
+Happy Teachers day 💐 
+"
+`,
+    author: "Vaishnavi Shrivastav 	2024	B.Com (Hons)	GEHU, Bhimtal"
+  },
+  {
+    text: `मैं कहां नही गया इस भारत में,मैने अधिकतम भारत को नजदीक से देखा है। मैंने अपनी _जिदंगी एक शोध_  में पाया,की डिपार्टमेंट ऑफ इंग्लिस से पाया ही पाया है। डिपार्टमेंट के इस योगदान,मेरी जिदंगी को तराशने के लिए धन्यवाद।
+
+विपिन सर,
+आप जैसा अनुभवी और साधारण पथप्रदर्शक मिलना हमारे लिए सौभाग्य है। मेरी दिली तमन्ना है ,एक दिन मैं भी आपकी तरह काबिल प्रोफेसर बनू।आपकी युवा रहनुमाई हमारे  कल्याण में अत्यंत लाभकारी है । पहले मैं सोचता था कि साधारणता (simplicity) से जीवन की राह अत्याधिक कठिन होती होगी,मेरी इस धारणा को बदलने लिए शुक्रिया।
+
+यहां सारे अनुभवी ,दयाशील एवं प्यार पूर्ण शिक्षको का जितना धन्यवाद करूं उतना कम है। मैंने देखा अगर मैं सारे शिक्षकों से थोड़ा थोड़ा उनका करिश्मा ले लूं, तो जीवन में कभी हताश ना हो पाऊंगा। मेरी जिदंगी के रंगमंच में अपना अहम नेतृव देने के लिए धन्यवाद।( हिंदी के शोध विशेषज्ञों को 'धन्यवाद' से बड़ा शब्द खोजने की जरूरत है।)
+
+मेरी यूनिवर्सिटी की एक-एक चीज मुझे जान से ज्यादा प्यारी है। मेज़ ,कुर्सी ,पंखे और पौधे इत्यादि सब मुझे जीवन भर याद रहेंगे।
+
+आज मैं जो भी हूं, और भविष्य में जो भी सफलता अर्जित करूंगा, उसमे 80 प्रतिशत योगदान , मेरी यूनिवर्सिटी का है। 
+    `,
+    author:"Himanshu Negi 	2022	BA / BA (Hons) / MA	GEHU, Dehradun  "
+  },
+  
   {
     text: `Dear Professors
 
@@ -327,3 +391,205 @@ Regards
   }
 
 ];
+
+
+const poems = [
+  {
+    text: `हम नदी के तराने है,
+डरते थे,समुंद्र में जाने से,
+शुक्रिया कह दूं, कैसे?
+जो कर्ज शुक्रिया ना हो सके,
+`,
+    author: "Himanshu Negi 	2022	BA / BA (Hons) / MA	GEHU, Dehradun"
+  },
+  {
+    text: `To all my professors,
+You lit the lamp of knowledge bright,
+And filled my days with guiding lights.
+GRATEFUL BEYOND WORDS
+`,
+    author: "Riya Sajwan 	2025	MA English	GEU, Dehradun"
+  },
+  {
+    text: `You taught us more than ABCs,
+You taught us how to chase our dreams.
+With every word, with every smile,
+You made each moment so worthwhile.
+
+Happy Teacher’s Day!
+You’re truly one of a kind.
+
+With love and respect,
+`,
+    author: "Adarsh Singh	2024	B.Pharma	GEU, Dehradun"
+  },
+  {
+    text: `You lit the path when it was dark,
+You left in me a hopeful spark,
+With every word you gently said,
+You shaped the thoughts inside my head.
+`,
+    author: "Nirmal Kumar 	2024	Others	GEU, Dehradun"
+  },
+  {
+    text: `"To Our Law Stars
+From torts to contracts, you make it bright,
+Turning heavy books into pure delight.
+With every statute, you help us see,
+How fair the world can truly be.
+On Teacher’s Day, we cheer and say,
+You rule our hearts—the legal way! 💛⚖️"
+`,
+    author: "AnKur PanDey	2025	BA-LLB	GEHU, Dehradunn"
+  },
+  {
+    text: `<b>To My Teachers</b>
+In halls once filled with Knowledge and cheer,
+Your words still echo, calm and clear.
+You lit the path, you showed the way,
+And shaped the lives that walked away.
+
+Though years have passed, your light remains—
+A guiding star through joys and strains.
+So here's my thanks, both deep and true,
+For all you are, and all you do.
+
+Happy Teachers’ Day!
+`,
+    author: "Tripti Manral	2023	BBA	GEHU, Dehradun"
+  },
+  {
+    text: `भाव में तो निर्मलता है, जीवन में सविनय ही रहे।
+संचित कर भंडार ज्ञान का, वाणी में है प्रेम बहे।।
+
+लौकिक कर कितने ही तन-मन, अल्प न दम्भ जताए जो।
+अपनी ज्ञप्ति के ही मूल पर, शिक्षक हैं कहलाये वो।।
+
+शिष्य के शीर्ष पे हाथ जो रखते, तम सारा मिटला देते।
+सत्य की राह पर चलें सदा हम, वो हमसे इतना कहते।।
+
+हो अर्जुन या कोई कर्ण हो, द्रोण-परशु बिन अधूरे हैं।
+संदीपन जब मिले कृष्ण से, तभी कन्हैया पूरे हैं।।
+
+शीश नवा के इनको अर्पण, चरणों में इनके सब धाम।
+राम को जो श्री राम बना दे, गुरु वशिष्ठ के हैं ये काम।।
+`,
+    author: "Shivam Singh	2014	B.Tech	GEU, Dehradun"
+  },
+  
+  
+  
+  {
+    text: `<b>To My Teachers at Graphic Era</b>
+
+In classrooms bright with dreams and light,
+You guided me through day and night.
+With patience, wisdom, and a steady hand,
+You helped me see, to understand.
+
+Each lesson more than books could say,
+You shaped my mind in every way.
+Your words still guide my every start,
+They’ve found a home within my heart.
+
+Though time has flown, and paths have grown wide,
+Your teachings walk right by my side.
+For all you’ve given, all you’ve done,
+You’ve lit the torch my race’s run has just begun."
+`,
+    author: "Kiran Preet Kaur	2017	MBA	GEU, Dehradun"
+  },
+  {
+    text: `I was a shadow, quiet and small,
+No voice to rise, no dream to call.
+Through life I walked, unsure, alone,
+A seed unwatered, never grown.
+
+Then came a guide, so pure, so kind,
+Who lit the lamps within my mind.
+With every word, with every smile,
+He taught me dreams are worth the while.
+
+Like flowers bloom in morning’s hue,
+He shaped my soul, my courage too.
+From dust to gold, from night to day,
+He showed me love will light the way.
+
+If fragrance clings to those who care,
+It’s 'cause their goodness lingers there.
+Dr. Prabh Deep Singh—my guiding star,
+Who made me see how bright we are.
+
+From zero’s shell, I’ve found my flight,
+All thanks to him who gave me light.
+
+`,
+    author: "Yogendra Bharadwaj	2020	B.Tech Computer Science & Engineering	GEU, Dehradun"
+  },
+  
+  {
+    text: `"You taught us more than books could say,
+In every lecture, day by day.
+Equations, circuits, gears that spin,
+Yet lessons deeper lie within.
+
+You showed us how to think, not just to do,
+To chase each problem, see it through.
+When logic failed, you lit the spark,
+And guided us through paths so dark.
+
+In bridges built of code and steel,
+You taught the strength of what we feel—
+That curiosity fuels the mind,
+And kindness leaves the best designs behind.
+
+So here we stand, with dreams anew,
+The blueprints drawn because of you.
+A teacher, mentor, and engineer,
+Whose wisdom keeps our futures clear."
+`,
+    author: "Saurabh Bisht 	2025	B.Tech CSE	GEHU, Haldwani"
+  },{
+    text: `<b>To My Guides in the Journey of Words</b>
+
+First step in college, a little unsure,
+Shipra Ma’am, your lessons opened the door.
+Your voice turned fear to eager delight,
+You made the first semester truly bright.
+
+Yachna Ma’am, with laughter and grace,
+Tests I feared, but free time was ace.
+Your warmth made every moment new,
+A teacher, a friend, I thank you.
+
+Devika Ma’am, sweetest soul of the lot,
+In every line, your kindness I caught.
+You made literature feel like a song,
+Guiding us gently, carrying us along.
+
+Amar Sir, still a mentor today,
+Your wisdom shaped my professional way.
+From first mail correction to lessons profound,
+Your guidance is where my strength is found.
+
+Anshu Ma’am, your “YOU” gave us fear,
+But your “HMM” brought the answers near.
+I cherished each class, challenge and all,
+With you, I learned to never stall.
+
+Arpita Ma’am, though you’ve moved away,
+Your kindness and maturity still stay.
+Thank you for Hackathon and every smile,
+You made the journey worthwhile.
+
+And Vipin Sir, our guiding star,
+Always supportive, you raised the bar.
+For standing with us through every tide,
+Thank you for walking by our side.
+
+To all my mentors, near or far,
+You shaped who I am, you lit my star."
+`,
+    author: "Shivani Rawat	2018	BA / BA (Hons) / MA	GEHU, Dehradun"
+  }
+]
