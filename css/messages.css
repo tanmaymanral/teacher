@@ -2,9 +2,10 @@ body {
   font-family: 'Lusitana', serif;
   margin: 0;
   padding: 0;
-  background-color: #f9f9f9;
+  background-image: url("../backd.jpg");
+  background-repeat: repeat;
+  background-size: 100%;
 }
-
 header {
   display: flex;
   justify-content: space-between;
@@ -24,8 +25,8 @@ header nav a {
 .title {
   text-align: center;
   margin: 30px 0;
-  font-size: 28px;
-  color: #333;
+  font-size: 68px;
+  color: #fff;
 }
 
 .layout {
@@ -60,11 +61,12 @@ header nav a {
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
   padding: 20px;
+  max-width: 80%;   
+  margin: 0 auto;  
 }
-
 .message-card {
-  background: #ffffff;
-  color: #333;
+  background: #ffffffef;
+  color: #04026d;
   border-radius: 12px;
   padding: 20px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
@@ -73,6 +75,8 @@ header nav a {
   line-height: 1.6;
   height: auto;
 }
+
+
 .message-card p {
   white-space: pre-line; /* keeps new lines in poems/messages */
 }
@@ -98,16 +102,16 @@ header nav a {
   padding: 10px 20px;
   margin: 0 10px;
   border: none;
-  border-radius: 8px;
-  background: #006781;
+  border-radius: 4px;
+  background: #ffffff60;
   color: white;
-  font-size: 16px;
+  font-size: 24px;
   cursor: pointer;
   transition: background 0.2s;
 }
 
 .filter-buttons button:hover {
-  background: #004d61;
+  background: #ffffff10;
 }
 
 @media (max-width: 600px) {
